@@ -245,31 +245,68 @@ section {
 }
 
 /* Contact */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+.contact {
+    padding: 80px 0;
+    background-color: var(--light-color);
+    text-align: center;
+}
+.section-title h2 {
+    margin-bottom: 20px; /* Adjust the space as needed */
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.section-title p {
+    margin-top: 10px; /* Optional: Adds space above the paragraph if needed */
+}
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
+.contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
+.contact-icon i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
 
-    .nav-links {
-        display: none; /* Mobile menu would replace this */
-    }
+.contact-icon:hover {
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
+
+.contact-icon:hover i {
+    transform: scale(1.2);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
 }
