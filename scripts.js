@@ -14,3 +14,4 @@ const observer = new IntersectionObserver(observerCallback, {
 document.querySelectorAll('.project-section').forEach(section => {
     observer.observe(section);
 });
+
